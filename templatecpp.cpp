@@ -29,31 +29,8 @@ int dist[mxN];     // array storing distances from refernce node
 bool visited[mxN] ;   // keeps track of the found nodes
 vector<pii> graph[mxN] ;   // adjacency list
 
-bool dfs(int node, int currtotal){
-if(visited[node]) return (dist[node]==currtotal);
-dist[node]=currtotal; visited[node]=true ;
-for(auto x :graph[node]) if(!dfs(x.F,x.S+currtotal))return false ;return true ;
-}
-
 void solve(){
-    int n , m ,u,v,w; cin >> n >> m  ;
-    Rep(i,n){
-        graph[i].clear(),
-        visited[i]=0,
-        dist[i]=0 ;
-    }
-    For(i,m){
-        cin >> u >> v >> w ;
-        graph[u].em(mp(v,w)) ;
-        graph[v].em(mp(u,-w)) ;
-    }
-    Rep(i,n){
-        if(!dfs(i,dist[i])){
-            cout <<"NO" << endl ;
-            return ;
-        }
-    }
-    cout << "YES" << endl ;
+
 }
 int main() {
     ios_base::sync_with_stdio(false);

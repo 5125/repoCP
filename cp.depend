@@ -1,4 +1,4 @@
 # depslib dependency file v1.0
-1588512523 source:/home/suchandra/Desktop/codeblocks-wpace/cp/main.cpp
-	<iostream>
+1588514146 source:/home/suchandra/Desktop/codeblocks-wpace/cp/main.cpp
+	<bits/stdc++.h>
 
